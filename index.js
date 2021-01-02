@@ -10,10 +10,10 @@ var paddleWidth = 75;
 var paddleX = (canvas.width-paddleWidth)/2;
 var rightPressed = false;
 var leftPressed = false;
-var brickRowCount = 5;
+var brickRowCount = 10;
 var brickColumnCount = 3;
-var brickWidth = 75;
-var brickHeight = 20;
+var brickWidth = 35;
+var brickHeight = 15;
 var brickPadding = 10;
 var brickOffsetTop = 30;
 var brickOffsetLeft = 30;
@@ -66,7 +66,7 @@ function collisionDetection() {
           b.status = 0;
           score++;
           if(score == brickRowCount*brickColumnCount) {
-            alert("YOU WIN, CONGRATS!");
+    alert("AHH, YOU WIN!!");
             document.location.reload();
           }
         }
